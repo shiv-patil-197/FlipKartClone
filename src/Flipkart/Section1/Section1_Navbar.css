@@ -68,8 +68,8 @@ gap: auto;
     border: 1px solid #ccc;
     list-style: none;
     position: absolute;
-    top: 96px;
-    right: 357px;
+    top:58px;
+    right: 369px;
     z-index: 1;
     line-height: 20px;
 }
@@ -139,7 +139,7 @@ padding: 7px;
     border: 1px solid #ccc;
     list-style: none;
     position: absolute;
-    top: 95px;
+    top: 57px;
     right: 37px;
     z-index: 1;
 

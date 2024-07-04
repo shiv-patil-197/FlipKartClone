@@ -10,7 +10,7 @@ function Flipkart() {
                 <Section1_Navbar/>
                 <Section2_Categories/>
                 <Section3_Images/>
-            </div>
+        </div>
         </>
     )
 
