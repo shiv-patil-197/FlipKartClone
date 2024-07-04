@@ -1,0 +1,262 @@
+{
+    "Login": [
+      "My Profile",
+      "Flipkart Plus Zone",
+      "Orders",
+      "WishList",
+      "Rewards",
+      "Gift Cards"
+    ],
+    "hamBurger": [
+      "Notification Preferences",
+      "24x7 Customer Care",
+      "Advertise",
+      "Download App"
+    ],
+    "Fashion": [
+      {
+        "name": "Mens Top Wear",
+        "subCat": [
+          "Men's T-Shirts",
+          "Men's Casual Shirts",
+          "Men's Kurtas",
+          "Men's EthnicSets"
+        ]
+      },
+      {
+        "name": "Mens Bottom Wear",
+        "subCat": [
+          "Men's Jeans",
+          "Men's Trackpants",
+          "Men's Shorts",
+          "Men's Cargos",
+          "Men's ThreeFourts",
+          "Men's Dhoti"
+        ]
+      },
+      {
+        "name": "Women Ethnic",
+        "subCat": [
+          "Women Sarees",
+          "Women Kurtas& Kurtis",
+          "Women Gowns",
+          "Women Lehengs Cholis",
+          "Women Palazzos",
+          "Women Blouse"
+        ]
+      },
+      {
+        "name": "Men Footwear",
+        "subCat": [
+          "Men's Sports Shoes",
+          "Men's Formal Shoes"
+        ]
+      },
+      {
+        "name": "Women Footwear",
+        "subCat": [
+          "Women Casual Shoes",
+          "Women Ethnic Shoes"
+        ]
+      },
+      {
+        "name": "Watches and Accessories",
+        "subCat": []
+      },
+      {
+        "name": "Women Western",
+        "subCat": []
+      },
+      {
+        "name": "Bags, Suitcases & Luggage",
+        "subCat": []
+      },
+      {
+        "name": "Kids",
+        "subCat": []
+      },
+      {
+        "name": "Essentials",
+        "subCat": []
+      },
+      {
+        "name": "winter",
+        "subCat": []
+      }
+    ],
+    "Electronics": [
+      {
+        "name": "Audio",
+        "subCat": [
+          "Speakers",
+          "Headphones"
+        ]
+      },
+      {
+        "name": "Electronics Gst Store",
+        "subCat": [
+          "DSLR",
+          "Drone"
+        ]
+      },
+      {
+        "name": "Cameras & Accessories",
+        "subCat": ["dsfghj","sdfghjk"]
+      },
+      {
+        "name": "Computer Peripherals",
+        "subCat": []
+      },
+      {
+        "name": "Gaming",
+        "subCat": ["dfghj"]
+      },
+      {
+        "name": "Health & Personal Care",
+        "subCat": []
+      },
+      {
+        "name": "Laptop Accessories",
+        "subCat": []
+      },
+      {
+        "name": "Laptop & Desktop",
+        "subCat": []
+      },
+      {
+        "name": "MobileAccessory",
+        "subCat": []
+      },
+      {
+        "name": "Powerbank",
+        "subCat": []
+      },
+      {
+        "name": "Smart Home automation",
+        "subCat": []
+      },
+      {
+        "name": "Smart Wearables",
+        "subCat": []
+      },
+      {
+        "name": "Storage",
+        "subCat": []
+      },
+      {
+        "name": "Tablets",
+        "subCat": []
+      }
+    ],
+    "Home&Furniture": [
+      {
+        "name": "Furniture Studio",
+        "subCat": [
+          "BedSheets",
+          "Blankets"
+        ]
+      },
+      {
+        "name": "Living Room Furniture",
+        "subCat": [
+          "Tv Units",
+          "Shoe Racks"
+        ]
+      },
+      {
+        "name": "Kichen & Dining",
+        "subCat": [
+          "Cookware",
+          "Kichen Tools"
+        ]
+      },
+      {
+        "name": "Bedroom Furniture",
+        "subCat": []
+      },
+      {
+        "name": "Space Saving Furniture",
+        "subCat": []
+      },
+      {
+        "name": "Home Decor",
+        "subCat": []
+      },
+      {
+        "name": "Tools & Utility",
+        "subCat": []
+      },
+      {
+        "name": "Work Space Furniture",
+        "subCat": []
+      },
+      {
+        "name": "Kids Furniture",
+        "subCat": []
+      },
+      {
+        "name": "Lightings & Electricals",
+        "subCat": []
+      },
+      {
+        "name": "Cleaning & Bath",
+        "subCat": []
+      }
+    ],
+    "BeautyToys": [
+      {
+        "name": "Men's Grooming",
+        "subCat": []
+      },
+      {
+        "name": "Food & Drinks",
+        "subCat": []
+      },
+      {
+        "name": "Nutrition & Health Care",
+        "subCat": []
+      },
+      {
+        "name": "Baby Care",
+        "subCat": []
+      },
+      {
+        "name": "Toys & School Supplies",
+        "subCat": []
+      },
+      {
+        "name": "Sports & Fitness",
+        "subCat": []
+      },
+      {
+        "name": "Books",
+        "subCat": []
+      },
+      {
+        "name": "Music",
+        "subCat": []
+      },
+      {
+        "name": "Stationery & Office Supplies",
+        "subCat": []
+      },
+      {
+        "name": "Auto Accessories",
+        "subCat": []
+      },
+      {
+        "name": "Safety & Hygiene Essentials",
+        "subCat": []
+      }
+    ],
+    "TwoWheelers": [
+      {
+        "name": "Petrol Vehicles",
+        "subCat": []
+      },
+      {
+        "name": "Electric Vehicles",
+        "subCat": []
+      }
+    ]
+  }
