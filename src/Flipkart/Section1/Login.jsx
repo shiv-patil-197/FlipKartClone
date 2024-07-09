@@ -1,6 +1,7 @@
 import "./Login.css"
 import { useForm } from "react-hook-form"
 import Section1_Navbar from "./Section1_Navbar";
+import { Link } from "react-router-dom";
 
 
 function Login() {
@@ -58,7 +59,7 @@ function Login() {
                             <div>
                                 <button type="submit">Login</button>
                             </div>
-                            <div class="ZJ3AS1"><a class="azBkHf" href="/account/login?signup=true">New to Flipkart? Create an account</a></div>
+                            <div class="ZJ3AS1"><Link class="azBkHf" to="/login/signup">New to Flipkart? Create an account</Link></div>
                         </form>
                     </div>
                 </div>

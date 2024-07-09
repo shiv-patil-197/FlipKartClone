@@ -1,0 +1,140 @@
+.mainDiv{
+    width: 100%;
+    height: 600px;
+    border: 2px solid green;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subDiv{
+    width: 58%;
+    height: 93%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13px;
+
+}
+
+.subDiv1{
+    width: 38%;
+    height: 100%;
+    /* border: 3px solid rgb(175, 231, 6); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-image: url(https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png);
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px 33px;
+    background-color: #2874f0;
+    font-size: 15px;
+    display: inline-block;
+    /* line-height: 1.4; */
+    
+}
+
+.innerDiv{
+    /* border: 2px solid orange; */
+    margin-top: 10px;
+} 
+.innerDiv .LoginTextSpan{
+    font-size: 28px;
+    font-weight: bold;
+    
+} 
+
+.innerDiv .LoginParaSpan{
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 150%;
+    color: #dbdbdb;
+    font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
+    
+
+}
+
+
+
+
+
+
+
+
+.formDiv{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    width: 62%;
+    height:100%;
+    background-color: white;
+
+
+}
+form{
+    display:  flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 45px 35px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    gap: 15px;
+}
+
+form input{
+    padding: 10px;
+    border: none;
+    width: 460px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px 10px 10px 0;
+    color: #000;
+    font-size: inherit;
+    background: #fff;
+}
+form button{
+    background-color: #fb641b;;
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 460px;
+    border: none;
+    height: 48px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    
+}
+
+.EpHS0A{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+
+.EpHS0A a{
+    text-decoration: none;
+}
+
+.ZJ3AS1{
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+}
+
+.ZJ3AS1 a{
+    text-decoration: none;
+}
