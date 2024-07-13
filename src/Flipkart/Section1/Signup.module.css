@@ -1,8 +1,7 @@
 .mainDiv{
     width: 100%;
     height: 600px;
-    border: 2px solid green;
-  
+    /* border: 2px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,12 +9,12 @@
 
 .subDiv{
     width: 58%;
-    height: 93%;
+    height: 95%;
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
 
 }
 
@@ -85,7 +84,7 @@ form{
     width: 100%;
     position: relative;
     height: 100%;
-    gap: 15px;
+    gap: 8px;
 }
 
 form input{
@@ -102,8 +101,43 @@ form button{
     background-color: #fb641b;;
     color: #fff;
     padding: 20px;
-    font-size: 15px;
-    letter-spacing: 2px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-weight:500;
+    width: 460px;
+    border: none;
+    height: 48px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+.EpHS0A{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+  
+}
+
+.EpHS0A a{
+    text-decoration: none;
+    color: #2874f0;
+}
+
+.c9RDXR a{
+    text-decoration: none;
+}
+
+.toLogin{
+    color: #2874f0;;
+    background-color: #fff;
+    padding: 20px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
     font-weight: bold;
     width: 460px;
     border: none;
@@ -112,29 +146,5 @@ form button{
     border-radius: 2px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
-    
-}
-
-.EpHS0A{
-    color: #878787;
-    font-size: 12px;
-    font-weight: 400;
-    
-}
-
-.EpHS0A a{
-    text-decoration: none;
-}
-
-.ZJ3AS1{
-    position: absolute;
-    bottom: 32px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    
-}
-
-.ZJ3AS1 a{
-    text-decoration: none;
+      
 }

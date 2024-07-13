@@ -7,7 +7,7 @@ import "./Section1_Navbar.css"
 function Section1_Navbar(){
 return (
     <div id="container1">
-                    <img id="logo" className="subclass" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" height="50%" width="10%" alt="" title="Flipkart" />
+                    <Link to="/" id="logo" className="subclass"><img id="logo"  src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" height="100%" width="100%" alt="" title="Flipkart" /></Link>
                     <div id="searchDiv" className="subclass">
                         <div id="d1">
                             <div title="Search Icon"><CiSearch/></div>
@@ -15,7 +15,7 @@ return (
                         <div id="d2">
                             <input type="search" placeholder=" Search for Products, Brands and More" title="Search for Products, Brands and More" />
                         </div>
-                    </div>
+                    </div>  
                     <div id="div1" className="subclass" >
                         <div id="has-subnavDIV">
                             <ul className="nav">

@@ -1,9 +1,8 @@
 #container1{
     /* border: 2px solid yellow; */
-    height: 14%;
+    height: 67px;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 15px 15px 0px 0px;
     background-color: #fff;
@@ -17,14 +16,21 @@ justify-content: center;
 align-items: center;
 gap: auto;
 }
+
+#container1 #logo{
+    margin: 0px 2px 1px 18px;
+    height: 40px;
+}
 #container1 #searchDiv{
-    width: 47%;
+    width: 745px;
     display: flex;
     align-items: center;
     background-color: #f0f5ff;
-    border-radius: 8px ;
-    
+    border-radius: 8px;
+    margin-left: -26px;
+    margin-right: -7px;
 }
+    
 
 #searchDiv #d1{
     width: 5%;
@@ -35,16 +41,15 @@ gap: auto;
     margin-left: 5px;
     margin-top: 5px;
 }
+#searchDiv #d2:placeholder-shown {
+    text-overflow: ellipsis;
+}
 #searchDiv #d2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
-    width: 5%;
+
     
-}
-#searchDiv #d2{
-    width: 95%;
 }
 #searchDiv #d2 input{
     width: 100%; 
@@ -53,6 +58,11 @@ gap: auto;
     font-size: 17px;
     height: 30px;
     outline: none;
+    padding: 2px 0px 0px 3px;
+}
+
+#searchDiv #d2{
+    width: 95%;
 }
 
 
@@ -68,8 +78,8 @@ gap: auto;
     border: 1px solid #ccc;
     list-style: none;
     position: absolute;
-    top:58px;
-    right: 369px;
+    top:57px;
+    right: 326px;
     z-index: 1;
     line-height: 20px;
 }
@@ -78,10 +88,11 @@ gap: auto;
     text-decoration: none;
     color: black;
 }
+
 .subnav a li {
 padding: 7px;
-/* margin-left: 5px; */
 }
+
 #has-subnavDIV:hover{
     background-color: #eaeaea;
     border-radius: 10px;
@@ -92,6 +103,7 @@ padding: 7px;
     align-items: center;
 }
 #subDiv1{
+    font-size: 17px;
     height: auto;
     padding: 10px;
     width: auto;
@@ -99,6 +111,11 @@ padding: 7px;
     justify-content: center;
     align-items: center;
     gap: 6px; 
+}
+
+#subDiv1 a{
+    text-decoration: none;
+     color: black;
 }
 #container1 #div1 #has-subnavDIV:hover .subnav{
    display: block;  
@@ -108,13 +125,22 @@ padding: 7px;
 } 
 
 
-#container1 #div1 , #container1 #div2, #container1 #div3{
-    gap: 5px;
-    font-size: 18px;
+ #container1 #div2, #container1 #div3{
+    gap: 8px;
+    font-size: 16px;
+    margin-left: -17px;
+   /* border: 2px solid rgb(55, 0, 255); */
+
+
+}
+#container1 #div3{
+    width: 170px;
 }
 
 #container1 #div4{
     margin-right: 35px;
+    margin-left: -15px;
+    border-radius: 8px;
  
 }
 #container1 #div4 div{
@@ -132,16 +158,17 @@ padding: 7px;
 }
 #container1 #div4 .subnav{
     display: none;
-    width: 190px;
+    width: 210px;
     height: auto;
-    /* background-color: rgb(126, 3, 3); */
+    background-color: rgb(126, 3, 3);
     background-color: rgb(255, 255, 255);
     border: 1px solid #ccc;
     list-style: none;
     position: absolute;
-    top: 57px;
+    top: 55px;
     right: 37px;
     z-index: 1;
+    border-radius: 0px 0px 5px 5px;
 
 }
 #container1 #div4:hover .subnav{
