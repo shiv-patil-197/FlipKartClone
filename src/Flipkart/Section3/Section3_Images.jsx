@@ -23,7 +23,7 @@ function Section3_Images(){
     useEffect(()=>{
         setInterval(()=>{
             i=(i+1)%bgImages.length;    
-            container3.style.backgroundImage=bgImages[i].img;
+            // container3.style.backgroundImage=bgImages[i].img;
         },4000)
     },[]) 
     

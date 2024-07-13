@@ -1,7 +1,7 @@
 #container2{
     /* border: 2px solid rgb(60, 0, 255); */
-    height: 26%;
-    width: 97%;
+    height: 140px;
+    width: 98%;
     display: flex;
     justify-content: center;
     align-items: center;
