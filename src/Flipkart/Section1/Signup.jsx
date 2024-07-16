@@ -10,8 +10,20 @@ function Signup() {
     let SendFormData = async (data) => {
     //   e.preventDefault();
     // console.log(data);
-     try{
-        await axios.post("http://localhost:5500/addUser", data)  
+
+    try{
+
+        const queryParams = {
+            number:number,
+            email:email
+        };
+        let {data:{data}}=await axios.get("http://localhost:5500/getUser",{ params: queryParams });  
+        if(data){
+            alert(" not found");
+        }else{
+            await axios.post("http://localhost:5500/addUser", data)  
+        }
+
      }
      catch(error){
       console.log(error);

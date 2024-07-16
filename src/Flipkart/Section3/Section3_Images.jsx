@@ -1,55 +1,70 @@
-import React, { useEffect, useRef } from "react";
+
+import React, { useEffect, useRef, useState } from "react";
 import { bgImages } from "../bgImages";
 import { IoChevronForward } from "react-icons/io5";
 import { IoChevronBack } from "react-icons/io5";
 import "./Section3_Images.css"
 
 
-
-function Section3_Images(){
-    let container3= useRef()
-    let i = 0;
-    function Navigate(e) {
-        console.log(e)
-        if (e.id == "btn2") {
-            i = (i + 1) % bgImages.length;
-        } else {
-            i = (i - 1 + bgImages.length) % bgImages.length
-        }
-        container3.current.style.backgroundImage=bgImages[i].img;
-       
-    }
-
-    useEffect(()=>{
-        setInterval(()=>{
-            i=(i+1)%bgImages.length;    
-            // container3.style.backgroundImage=bgImages[i].img;
-        },4000)
-    },[]) 
+function Section3_Images() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const sliderRef = useRef(null);
+    const intervalRef = useRef(null);
+      
+      const nextSlide = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === bgImages.length - 1 ? 0 : prevIndex + 1
+        );
+        resetInterval();
+      };
     
-  return(
-    <div id="container3" style={{backgroundImage: "url('https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d05c680ac784bef4.png?q=20')"}} ref={container3}>
-                    <div id="container3_div1">
-                        <div><button className="btn" id="btn1" onClick={Navigate}><IoChevronBack /></button></div>
-                        <div><button className="btn" id="btn2" onClick={Navigate}><IoChevronForward /></button></div>
-                    </div>
-                    <div id="container3_div2">
-                        <div id="SlidebarDiv">
-                            <div id="innerDiv">
-                                <div className="ImageDot"><i className="fa-duotone fa-circle"></i></div>
-                                <div className="ImageDot"><i className="fa-duotone fa-circle"></i></div>
-                                <div className="ImageDot"><i className="fa-duotone fa-circle"></i></div>
-                                <div className="ImageDot"><i className="fa-duotone fa-circle"></i></div>
-                                <div className="ImageDot"><i className="fa-duotone fa-circle"></i></div>
-                                <div className="ImageDot"><i className="fa-duotone fa-circle"></i></div>
-                                <div className="ImageDot"><i className="fa-duotone fa-circle"></i></div>
-                                <div className="ImageDot"><i className="fa-duotone fa-circle"></i></div>
-                                <div className="ImageDot"><i className="fa-duotone fa-circle"></i></div>
-                            </div>
+      const prevSlide = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? bgImages.length - 1 : prevIndex - 1
+        );
+        resetInterval();
+        
+      };
 
-                        </div>
-                    </div>
-                </div>
+      const startSlide = () => {
+        intervalRef.current = setInterval(() => {
+          setCurrentIndex((prevIndex) =>
+            prevIndex === bgImages.length - 1 ? 0 : prevIndex + 1
+          );
+        }, 4000); // Adjust the interval as needed (in milliseconds)
+        
+      };
+
+      const resetInterval = () => {
+        console.log(intervalRef);
+        clearInterval(intervalRef.current);
+        startSlide();
+      };
+    
+      useEffect(() => {
+        startSlide();
+        return () => {
+          clearInterval(intervalRef.current);
+        };
+      }, []);
+    
+    
+
+  return (
+    <div className="Slider">
+           <div className="btnDiv" > 
+             <button className="btn" id="btn_left" onClick={prevSlide}><IoChevronBack/></button>
+            </div>
+            <div className="slider_Image" ref={sliderRef} style={{ transform: `translateX(${-currentIndex * 100}%)` }}>
+            {bgImages.map((image, index) => (
+          <img key={index} className="slide" src={image.img} alt={`Slide ${index + 1}`} />
+        ))}
+               
+            </div>
+            <div className="btnDiv" onClick={nextSlide}> 
+             <button className="btn" id="btn_right"><IoChevronForward/></button>
+            </div>
+    </div>
   )
 }
 export default Section3_Images

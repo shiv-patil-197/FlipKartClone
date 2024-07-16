@@ -13,8 +13,7 @@ function Login() {
      try{
 
         const queryParams = {
-            username: user,
-            password: pass
+            username: user
         };
         let {data:{data}}=await axios.get("http://localhost:5500/getUser",{ params: queryParams });  
         if(!data){
