@@ -7,26 +7,17 @@ function Signup() {
     const { register, handleSubmit, formState: { errors },watch } = useForm();
     let NavigateToLoginPage = useNavigate()
 
-    let SendFormData = async (data) => {
+    let SendFormData = async (dataa) => {
     //   e.preventDefault();
     // console.log(data);
-
-    try{
-
-        const queryParams = {
-            number:number,
-            email:email
-        };
-        let {data:{data}}=await axios.get("http://localhost:5500/getUser",{ params: queryParams });  
-        if(data){
-            alert(" not found");
-        }else{
-            await axios.post("http://localhost:5500/addUser", data)  
-        }
-
+    try{ 
+      let {data}= await axios.post("http://localhost:5500/addUser", dataa)
+                // console.log(data);    
+                alert (data.message)
      }
      catch(error){
-      console.log(error);
+    //   console.log(error.response.data);
+      alert(error.response.data.message)
      }
     }
     const password = watch("password", ""); // Watch the password field to compare with confirmPassword

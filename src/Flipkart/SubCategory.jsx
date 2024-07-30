@@ -2,7 +2,7 @@ import { IoChevronForward } from "react-icons/io5";
 
 import InnerSubCategory from "./InnerSubCategory";
 function Subcategory({category}) {
-console.log(category);
+// console.log(category);
     return (
         <ul className="subnav" >
             {category.map(({name,subCat}) => {

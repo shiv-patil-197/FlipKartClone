@@ -3,9 +3,10 @@ import { useForm } from "react-hook-form"
 import Section1_Navbar from "./Section1_Navbar";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useState } from "react";
 
 function Login() {
-
+    let [login, setLogin]=useState(false)
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     let SendFormData =async ({user,pass}) => {
@@ -20,6 +21,7 @@ function Login() {
             alert("username not found");
         }else if(pass===data.password){
             alert("user logged in successfully");
+            setLogin(true)
         }else{
             alert("wrong password");
         }
