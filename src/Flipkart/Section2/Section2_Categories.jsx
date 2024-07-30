@@ -18,7 +18,7 @@ console.log(categories);
     </div>
     <div id="box3" className="category">
         <img src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" alt="" />
-        <div><span>Fashion</span><i className="icon"><IoIosArrowDown/></i></div>
+        <div id="box3"><span>Fashion</span><i className="icon"><IoIosArrowDown/></i></div>
          <Subcategory category={categories.Fashion} />
     </div>
     <div id="box4" className="category">

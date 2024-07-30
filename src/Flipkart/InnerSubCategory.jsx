@@ -1,10 +1,10 @@
-function InnerSubCategory({name, innercategory}) {
+function  InnerSubCategory({name, innercategory}) {
     // console.log(name);
     let i=1;
     return (
         <ul className="innersubnav">
             <a href="">
-                    <div id="sublist"><li>{`More in ${name}`}</li></div>
+                    <div id="sublist" style={{fontWeight:"bold"}}><li>{`More in ${name}`}</li></div>
                 </a>
             {innercategory.map((c) => {
                 return <a href="">
