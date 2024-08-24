@@ -1,0 +1,7 @@
+let mongoose=require("mongoose")
+
+const connectdb=(url)=>{
+    mongoose.connect(url)
+}
+
+module.exports=connectdb
